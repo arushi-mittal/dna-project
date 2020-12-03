@@ -35,6 +35,6 @@ Assumptions:
 	- Queries have restrictions that ensure no insert, update or deletion anomalies are caused keeping in mind the impact of incorrect management of foreign keys. 
 	
 ### Creators
-#### Arushi Mittal - github.com/arushi-mittal/
+#### Arushi Mittal - https://github.com/arushi-mittal/
 #### Dhruvee Birla - https://github.com/dhruvxx
 #### Meghna Mishra - https://github.com/meghna-mishra
