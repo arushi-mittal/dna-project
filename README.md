@@ -17,18 +17,27 @@ $ python3 cli.py
 - Follow the prompts and enter the hostname, username, password and port name without any leading spaces. This would connect the database to the python interface.
 - Enter a query number and follow the prompts to execute those queries.
 
+### Application Description
+
 We used MySQL to create the tables and insert the sample data. PyMySQL was used to implement the queries.
 
 The following queries are available:
-1. Selection: Find all the airplanes for a given airline code
-2. Projection: For a given Journey ID, display the full names of all the passengers
-3. Aggregate: Find the total number of flights departing from home airport to a another aiport given its airport code
-4. Search: Search for passengers on a given Journey ID, by entering name or part of name
-5. Insert: Given airplane details, insert a new airplane into the database
-6. Update: Given the Journey ID of a journey, update the value of the terminal it must take off from to the value provided.
-7. Delete: Given a PNR number, delete the corresponding passenger from the database
-8. Analysis: Find the number of passengers traveling on a journey given a Journey ID
-9. Analysis: Find the total weight of luggage on a given journey
+1. `Selection`: Find all the `airplanes` for a given `airline code`.
+2. `Projection`: For a given `Journey ID`, display the `full names` of all the passengers.
+3. `Aggregate`: Find the `total number of flights departing` from home airport to a another aiport given its `airport code`.
+4. `Search`: Search for passengers on a given `Journey ID`, by entering `name or part of name`.
+5. `Insert`: Given `airplane details`, insert a `new airplane` into the database
+6. `Update`: Given the `Journey ID` of a journey, update the `value of the terminal` it must take off from to the value provided.
+7. `Delete`: Given a `PNR number`, delete the corresponding passenger from the database.
+8. `Analysis`: Find the `number of passengers` traveling on a journey given a `Journey ID`.
+9. `Analysis`: Find the `total weight` of luggage on a given journey.
+
+### Error Handling 
+
+- All possible errors are handled and requisite error messages are displayed in order to detract from an inconvenient user experience and make the overall usage easier for the user.
+- Whenever an incorrect prompt is entered users are given the option to re-enter their query along with an alert about the error so they do not make the same mistake.
+- Errors relating to `incorrect query number`, incorrect query `format`, `non-existent data`, inserting `duplicate data`, re-using a `primary key`, etc. are detected, stopped, and displayed to the user with the error message and information on how to correct it.
+
 
 Changes made from initial phases:
 - We have added an attribute home_terminal to the Journey table. This was done to indicate which terminal in the home airport the flight takes off from. The terminal and airport to which it is travelling was already included.
