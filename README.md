@@ -39,13 +39,15 @@ The following queries are available:
 - Errors relating to `incorrect query number`, incorrect query `format`, `non-existent data`, inserting `duplicate data`, re-using a `primary key`, etc. are detected, stopped, and displayed to the user with the error message and information on how to correct it.
 
 
-Changes made from initial phases:
-- We have added an attribute home_terminal to the Journey table. This was done to indicate which terminal in the home airport the flight takes off from. The terminal and airport to which it is travelling was already included.
+### Changes made from initial phases:
+- Addition of an attribute called home_terminal to the Journey table. This was done to indicate which terminal in the home airport the flight takes off from. The terminal and airport to which it is travelling was already included.
 - We have made airline_code in Codename a foreign key to airline_code in Airplane, as this had been omitted earlier.
 - The data type for airport_code in Airport has been corrected to varchar.
-- We have made changes to the queries mentioned in our requirement doc, as we found that those queries were flawed. The update, delete and insert operations remain the same.
+- We have made changes to the queries mentioned in our requirements document, as we found that those queries were flawed. The update, delete and insert operations remain the same.
 - The attribute ‘number’ of the terminal entity has been renamed to ‘terminal_number’ for sake of clarity.
-Assumptions:
+
+
+### Assumptions:
 
 - We assume that a passenger can realistically only depart on one journey from the Home Airport in a day.
 - Queries have restrictions that ensure no insert, update or deletion anomalies are caused keeping in mind the impact of incorrect management of foreign keys. 
