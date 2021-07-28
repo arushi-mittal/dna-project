@@ -54,5 +54,5 @@ The following queries are available:
 	
 ### Contributors
 ##### [Arushi Mittal](https://github.com/arushi-mittal/)
-##### [Dhruvee Birla](https://github.com/dhruvxx
+##### [Dhruvee Birla](https://github.com/dhruvxx)
 ##### [Meghna Mishra](https://github.com/meghna-mishra)
