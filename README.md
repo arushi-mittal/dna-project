@@ -4,6 +4,7 @@
 
 The universe of discourse is a Home Airport. The database stores the details of all the flights departing from the Home Airport (in one day) including the destination airport and terminal, the take-off terminal, along with details about the passengers, crew, airplane and airline.
 
+The `requirements document` during the initial planning phase of the project, and the `Entity-Relationship Diagram` that served as the template for the database are included in the files `ER Diagram.pdf` and `Requirements.pdf`.
 
 ### Running The Program
 

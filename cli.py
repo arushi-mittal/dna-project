@@ -138,7 +138,7 @@ def insert ():
 	airline = input("Enter an Airline Code:  ")
 	while (flag == 1):
 		if len(airline) == 2 and airline.isupper() and airline.isalnum():
-				flag = 0;
+				flag = 0
 		else:
 			print("Airline code must have 2 characters and uppercase characters")
 			airline = input("Enter an Airline Code:  ")
@@ -154,7 +154,7 @@ def insert ():
 	dom = input("Enter Date of Manufacture: ")
 	while (flag == 1):
 		if (isdate(dom)):
-			flag = 0;
+			flag = 0
 		else:
 			print("Date must be a valid date in the format YYYY-MM-DD")
 			dom = input("Enter Date of Manufacture: ")	
@@ -163,7 +163,7 @@ def insert ():
 	while (flag == 1):
 		temp = model.replace(" ", "")
 		if (temp.isalnum()) :
-			flag = 0;
+			flag = 0
 		else:
 			print("Model name must be an alphanumeric string (spaces allowed) less than 15 characters")
 			model = input("Enter the Model:  ")
@@ -306,7 +306,7 @@ def prompt ():
 	print("\n\n")
 	if (a == "exit"):
 		a = 0
-		return a;
+		return a
 	try:
 		a = int(a)
 		if a < 1 or a > 9:
