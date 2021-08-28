@@ -40,11 +40,11 @@ The following queries are available:
 
 
 ### Changes made from initial phases:
-- Addition of an attribute called home_terminal to the Journey table. This was done to indicate which terminal in the home airport the flight takes off from. The terminal and airport to which it is travelling was already included.
-- We have made airline_code in Codename a foreign key to airline_code in Airplane, as this had been omitted earlier.
-- The data type for airport_code in Airport has been corrected to varchar.
+- Addition of an attribute called `home_terminal` to the `Journey` table. This was done to indicate which terminal in the home airport the flight takes off from. The terminal and airport to which it is travelling was already included.
+- We have made `airline_code` in `Codename` a foreign key to `airline_code` in `Airplane`, as this had been omitted earlier.
+- The data type for `airport_code` in Airport has been corrected to `varchar`.
 - We have made changes to the queries mentioned in our requirements document, as we found that those queries were flawed. The update, delete and insert operations remain the same.
-- The attribute ‘number’ of the terminal entity has been renamed to ‘terminal_number’ for sake of clarity.
+- The attribute `number` of the `terminal` entity has been renamed to `terminal_number` for sake of clarity.
 
 
 ### Assumptions:
